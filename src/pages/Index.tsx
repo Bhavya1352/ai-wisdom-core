@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Brain, Search, Upload, BarChart3, Zap, Shield, Users } from "lucide-react";
+import { Zap, Search, Upload, BarChart3, Shield, Users, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 
@@ -22,7 +22,7 @@ const Index = () => {
       description: "Track usage and performance with detailed insights",
     },
     {
-      icon: Zap,
+      icon: Sparkles,
       title: "Fast Processing",
       description: "Lightning-fast document processing and retrieval",
     },
@@ -46,8 +46,9 @@ const Index = () => {
       <section className="container mx-auto px-4 py-16 text-center">
         <div className="animate-fade-in">
           <div className="flex justify-center mb-6">
-            <div className="p-4 bg-primary/10 rounded-full animate-scale-in">
-              <Brain className="h-16 w-16 text-primary" />
+            <div className="p-4 bg-primary/20 rounded-full animate-scale-in relative">
+              <Zap className="h-16 w-16 text-primary" />
+              <div className="absolute -top-2 -right-2 w-6 h-6 bg-accent rounded-full animate-pulse" />
             </div>
           </div>
           <h1 className="gradient-text mb-6">

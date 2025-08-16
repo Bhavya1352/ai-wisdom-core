@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Brain, Menu, X, Search, Upload, BarChart3, LogOut } from "lucide-react";
+import { Zap, Menu, X, Search, Upload, BarChart3, LogOut } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
@@ -20,8 +20,11 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <Brain className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold gradient-text">AI Knowledge Hub</span>
+            <div className="relative">
+              <Zap className="h-8 w-8 text-primary" />
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full animate-pulse" />
+            </div>
+            <span className="text-xl font-bold gradient-text">KnowledgeAI</span>
           </Link>
 
           {/* Desktop Navigation */}

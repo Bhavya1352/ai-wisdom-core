@@ -8,50 +8,50 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 262 30% 15%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 262 30% 15%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222 47% 11%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
 
-    --secondary: 210 40% 94%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 262 30% 25%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 262 30% 20%;
+    --muted-foreground: 215 20% 70%;
 
-    --accent: 217 91% 60%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 262 73% 67%;
+    --accent-foreground: 222 47% 11%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 262 30% 25%;
+    --input: 262 30% 20%;
+    --ring: 217 91% 60%;
 
     --radius: 0.75rem;
 
-    /* AI Theme Colors */
-    --ai-primary: 222 47% 11%;
-    --ai-secondary: 217 91% 60%;
-    --ai-background-start: 210 40% 98%;
-    --ai-background-end: 217 32% 96%;
+    /* AI Theme Colors - Dark Background */
+    --ai-primary: 217 91% 60%;
+    --ai-secondary: 262 73% 67%;
+    --ai-background-start: 222 47% 11%;
+    --ai-background-end: 262 30% 15%;
     
-    /* Gradients */
+    /* Dark Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--ai-primary)), hsl(var(--ai-secondary)));
     --gradient-background: linear-gradient(135deg, hsl(var(--ai-background-start)), hsl(var(--ai-background-end)));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.8), hsl(210 40% 98% / 0.6));
+    --gradient-card: linear-gradient(145deg, hsl(222 47% 11% / 0.8), hsl(262 30% 15% / 0.6));
     
-    /* Shadows */
-    --shadow-glow: 0 0 40px hsl(var(--ai-secondary) / 0.3);
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--ai-primary) / 0.2);
+    /* Dark Theme Shadows */
+    --shadow-glow: 0 0 40px hsl(var(--ai-secondary) / 0.4);
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--ai-primary) / 0.3);
 
     --sidebar-background: 0 0% 98%;
 

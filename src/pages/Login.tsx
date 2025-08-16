@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Brain, Mail, Lock, Eye, EyeOff } from "lucide-react";
+import { Zap, Mail, Lock, Eye, EyeOff } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -26,13 +26,14 @@ const Login = () => {
       <Card className="glass-card w-full max-w-md animate-scale-in">
         <CardHeader className="text-center">
           <div className="flex justify-center mb-4">
-            <div className="p-3 bg-primary/10 rounded-full">
-              <Brain className="h-8 w-8 text-primary" />
+            <div className="p-3 bg-primary/20 rounded-full relative">
+              <Zap className="h-8 w-8 text-primary" />
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full animate-pulse" />
             </div>
           </div>
           <CardTitle className="text-2xl font-bold gradient-text">Welcome Back</CardTitle>
           <CardDescription>
-            Sign in to access your AI Knowledge Hub
+            Sign in to access KnowledgeAI
           </CardDescription>
         </CardHeader>
         <CardContent>
